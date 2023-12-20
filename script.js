@@ -147,7 +147,7 @@ function final() {
    try {
     rightOscillator.disconnect(rightGain);
     leftOscillator.disconnect(leftGain);
-    axios.post('https://tech-vividh.onrender.com//sendmail',{name:localStorage.getItem('name'),email:localStorage.getItem('email'),data:{leftFrequency:leftFrec,rightFrequency:rightFrec,leftSound:leftSound,rightSound:rightSound}})
+    axios.post('https://tech-vividh.onrender.com/sendmail',{name:localStorage.getItem('name'),email:localStorage.getItem('email'),data:{leftFrequency:leftFrec,rightFrequency:rightFrec,leftSound:leftSound,rightSound:rightSound}})
     .then(res=>{alert(JSON.stringify(res.data))})
     .catch(err=>{alert(JSON.stringify(err))})
   } catch (e) {
