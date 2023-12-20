@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tech Vividh!</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <style>
+    label {
+      background-color: indigo;
+      color: white;
+      padding: 0.5rem;
+      font-family: sans-serif;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="google_translate_element" style="float: right;"></div>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+  </script>
+
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <a href="index.html" style="text-decoration: none;">
+    <h1>Tech Vividh</h1>
+  </a>
+  <div class="intro">
+    <center>
+      <img src="banner.png" height="80" />
+    </center>
+    <br>
+    <h2>What is this website about?</h2>
+    <p>Tinnitus is a disorder in which a person hears a beep of a certain frequency constantly in one or both ears.
+      Against the popular belief that "it's not that bad," this website tries to show that it's not like that.</p>
+    <br>
+    <h2>How does it work?</h2>
+    <p>To begin with, a person with tinnitus must put on the headphones and press the "start" button. At that moment, a
+      frequency will begin to sound. Through the bottom bar, you can change the frequency you hear. The moment you stop
+      hearing the sound, you must move the sound bar until you hear it again. The process must be repeated for the other
+      ear.</p>
+    <p>At this point, the user without tinnitus will be ready to put on the headphones and will hear someone with
+      tinnitus.
+    </p>
+    <br>
+    <h2>Features</h2>
+    <p>
+      1. Play, Test <br />
+      2. Fast Processing <br />
+      3. Low Power Consuming <br />
+      4. Bluetooth Compatibility <br />
+      5. Regular Updates <br />
+      6. Save Money <br />
+      7. Unlimited Usage <br />
+    </p> <br />
+
+    <h2>Developed By:</h2>
+    <table>
+      <tr>
+        <td>Team Leader</td>
+        <td>:</td>
+        <td style="color:red">Devi Sriya Miriyala</td>
+      </tr>
+      <tr>
+        <td>Member1</td>
+        <td>:</td>
+        <td style="color:red">Girijala Veera Venkata Jayasri</td>
+      </tr>
+      <tr>
+        <td>Member2</td>
+        <td>:</td>
+        <td style="color:red">Chintapalli Vyshnavi</td>
+      </tr>
+      <tr>
+        <td>Member3</td>
+        <td>:</td>
+        <td style="color:red">Chevula Geetha Manogna</td>
+      </tr>
+      <tr>
+        <td>Member4</td>
+        <td>:</td>
+        <td style="color:red">Eka Phanindra Lakshmi Narasimha</td>
+      </tr>
+      <tr>
+        <td>Member5</td>
+        <td>:</td>
+        <td style="color:red">Kankata Venkat Sai</td>
+      </tr>
+      <tr>
+        <td>Mentor</td>
+        <td>:</td>
+        <td style="color:red">K. Mallikarjuna Rao</td>
+      </tr>
+      <tr>
+        <td>Mentor</td>
+        <td>:</td>
+        <td style="color:red">Dr. Sarala Patchala</td>
+      </tr>
+    </table>
+    <button id="letsStart">Lets Start!</button>
+  </div>
+
+  <div class="interface">
+    <br>
+    <div id="batteryStatus" style="color:blue">Battery Level: 100%</div> <br />
+    <div class="config">
+      <div class="left">
+        <div class="instructions">
+          <p>Let's start with the left ear.</p>
+          <p>Press "start" to begin. Move the bar to change the frequency.</p>
+          <p>When you can no longer hear the frequency through your left ear, press "forward."</p>
+        </div>
+
+        <div id="form" class="form">
+          <input type="text" name="name" placeholder="Name*" id="name" required />
+          <input type="email" name="email" placeholder="Email*" id="email" required />
+          <button id="startLeft">Start</button>
+        </div>
+
+        <div class="optionsLeft">
+          <p id="rangeText">Move the following bar to control <b>the frequency</b>:</p>
+          <input type="range" name="" id="rangeLeftFrec" min="20" max="20000">
+
+          <p id="rangeText">And, with this bar, you can control <b>the volume</b>:</p>
+          <input type="range" name="" id="rangeLeftVol" min="0" max="100">
+
+          <button id="stopLeft">Stop</button>
+          <button id="restartLeft" style="display: none;">Play Again</button>
+
+          <button id="forwardLeftFrec">Forward</button>
+          <br>
+          <div class="show-frequency-left"></div>
+        </div>
+
+      </div>
+      <div class="right">
+        <div class="instructions">
+          <p>Let's start with the right ear.</p>
+          <p>Press "start" to begin. Move the bar to change the frequency.</p>
+          <p>When you can no longer hear the frequency through your right ear, press "forward."</p>
+        </div>
+
+        <div class="optionsRight">
+          <p id="rangeText">Move the next bar to control <b>the frequency</b>:</p>
+          <input type="range" name="" id="rangeRightFrec" min="20" max="20000">
+
+          <p id="rangeText">And, with this bar, you can control <b>the volume</b>:</p>
+          <input type="range" name="" id="rangeRightVol" min="0" max="100">
+
+          <button id="stopRight">Stop</button>
+          <button id="restartRight" style="display: none;">Play Again</button>
+
+          <button id="forwardRightFrec">Forward</button>
+          <br>
+          <div class="show-frequency-right"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="result">
+      <div class="instructions">
+        <p>Perfect! Everything is ready.</p>
+        <p>Now, give the headphones to someone else. When it's ready, press "start."</p>
+        <p>Then, others will be able to hear what you always hear.</p>
+      </div>
+      <br>
+      <button id="finalButton">Show</button>
+      <br>
+      <br>
+      <div class="show-frequency" style="display: none;">
+      </div>
+      <br /><br /><br />
+      <div>
+        <center>
+          <p id="rangeText">Amplify</p>
+          <input type="range" name="" id="sampleVol" min="0" max="100">
+          <div id="audioPanel">
+            <div class="albumTitle">
+              <h3 style="display: inline-block;">Play Relaxed Music</h3>
+              <button id="playprev" class="playerBtn"><i class="fa fa-arrow-left"></i></button>
+              <select id="playlist">
+                <option data-mp3="test1.mp3">Sample 1</option>
+                <option data-mp3="test2.mp3">Sample 2</option>
+                <option data-mp3="test3.mp3">Sample 3</option>
+                <option data-mp3="test4.mp3">Sample 4</option>
+                <option data-mp3="test5.mp3">Sample 5</option>
+              </select>
+              <button id="playnext" class="playerBtn"><i class="fa fa-arrow-right"></i></button>
+              <div id="playerWrap" class="playerWrap"><audio id="audio" controls></audio></div>
+            </div>
+        </center>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+  <script src="play.js"></script>
+  <script src="battery.js"></script>
+  
+</body>
+
+</html>
